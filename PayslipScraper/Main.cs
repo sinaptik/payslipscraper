@@ -14,7 +14,7 @@ namespace PayslipScraper
 			
 			var extractor = kernel.Get<ExtractPaySlipInformation>();
 			
-			var payslips = extractor.PerformExtraction("");
+			var payslips = extractor.PerformExtraction(args[0]);
 			
 			var sorted = payslips.OrderBy(x => x.PeriodEnd).ToList();
 			
