@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>10.0.0</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{24F402E2-6CC6-4C55-9DCB-063B0B03314C}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>PayslipScraper</RootNamespace>
+    <AssemblyName>PayslipScraper</AssemblyName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+    <Externalconsole>true</Externalconsole>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <DebugType>none</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+    <Externalconsole>true</Externalconsole>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="Ninject">
+      <HintPath>..\Ninject.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Core" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Main.cs" />
+    <Compile Include="AssemblyInfo.cs" />
+    <Compile Include="IExtractInformation.cs" />
+    <Compile Include="Bindings.cs" />
+    <Compile Include="ExtractPaySlipInformation.cs" />
+    <Compile Include="Extractors\ExtractPeriodEnd.cs" />
+    <Compile Include="Payslip.cs" />
+    <Compile Include="Extractors\ExtractPayRate.cs" />
+    <Compile Include="Extractors\ExtractSickLeave.cs" />
+    <Compile Include="Extractors\ExtractAnnualLeave.cs" />
+    <Compile Include="Extractors\ExtractBankedPay.cs" />
+    <Compile Include="SavePayslipToJson.cs" />
+    <Compile Include="GenerateGraphHtml.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ItemGroup>
+    <Folder Include="Extractors\" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,20 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="PayslipScraper/GenerateGraphHtml.cs">
+    <Files>
+      <File FileName="PayslipScraper/ExtractPaySlipInformation.cs" Line="17" Column="55" />
+      <File FileName="PayslipScraper/Main.cs" Line="11" Column="4" />
+      <File FileName="PayslipScraper/Extractors/ExtractBankedPay.cs" Line="12" Column="45" />
+      <File FileName="PayslipScraper/Bindings.cs" Line="15" Column="47" />
+      <File FileName="PayslipScraper/SavePayslipToJson.cs" Line="11" Column="3" />
+      <File FileName="PayslipScraper/GenerateGraphHtml.cs" Line="37" Column="4" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches>
+    <Watch file="PayslipScraper/Main.cs" line="19" offsetX="370" offsetY="262" expression="sorted" liveUpdate="False" />
+    <Watch file="PayslipScraper/ExtractPaySlipInformation.cs" line="37" offsetX="438" offsetY="612" expression="fuuu" liveUpdate="False" />
+  </MonoDevelop.Ide.DebuggingService.PinnedWatches>
+</Properties>
